@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText('erbhargavdas@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -25,7 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Bhargav Das</p>
               <p className="grid-subtext">
-              Enthusiastic Software Developer with solid skills in JavaScript, React, and Node.js, passionate about scalable apps and continuous learning.
+                Enthusiastic Software Developer with solid skills in JavaScript, React, and Node.js, passionate about scalable apps and continuous learning.
               </p>
             </div>
           </div>
@@ -49,13 +49,13 @@ const About = () => {
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
-              animate={true}
-              ref={(globe) => {
-                if (globe) {
-                  globe.controls().autoRotate = true;
-                  globe.controls().autoRotateSpeed = 1;
-                }
-              }}
+                animate={true}
+                ref={(globe) => {
+                  if (globe) {
+                    globe.controls().autoRotate = true;
+                    globe.controls().autoRotateSpeed = 1;
+                  }
+                }}
                 height={326}
                 width={326}
                 backgroundColor="rgba(0, 0, 0, 0)"
@@ -65,7 +65,7 @@ const About = () => {
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 labelsData={[{ lat: 23, lng: 78.5, text: 'Madhya Pradesh, India', color: 'white', size: 50 }]}
-                
+
               />
             </div>
 
@@ -73,7 +73,7 @@ const About = () => {
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
               <p className="grid-subtext">I&apos;m based in Madhya Pradesh, India and open to remote work worldwide.</p>
               <a href="#contact" className="w-fit">
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
               </a>
             </div>
           </div>
@@ -105,7 +105,7 @@ const About = () => {
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                  <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">bhargavdas21th@gmail.com</p>
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">erbhargavdas@gmail.com</p>
               </div>
             </div>
           </div>
