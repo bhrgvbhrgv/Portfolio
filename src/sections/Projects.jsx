@@ -70,13 +70,15 @@ const Projects = () => {
           </div>
 
           <div className="flex justify-between items-center mt-7">
-            <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/left-arrow.png" alt="left arrow" />
-            </button>
+              <button className="arrow-btn flex flex-col items-center justify-center gap-1" onClick={() => handleNavigation('previous')}>
+                <span className="font-bold text-white text-center leading-tight">Previous Project</span>
+                <img src="/assets/left-arrow.png" alt="left arrow" className="w-4 h-4" />
+              </button>
 
-            <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
-            </button>
+              <button className="arrow-btn flex flex-col items-center justify-center gap-1" onClick={() => handleNavigation('next')}>
+                <span className="font-bold text-white text-center leading-tight">Next Project</span>
+                <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+              </button>
           </div>
         </div>
 
