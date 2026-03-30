@@ -5,6 +5,7 @@ import Button from '../components/Button.jsx';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+  const [copiedSocial, setCopiedSocial] = useState('');
 
   const handleCopy = () => {
     navigator.clipboard.writeText('erbhargavdas@gmail.com');
@@ -12,6 +13,15 @@ const About = () => {
 
     setTimeout(() => {
       setHasCopied(false);
+    }, 2000);
+  };
+
+  const handleSocialCopy = (url, key) => {
+    navigator.clipboard.writeText(url);
+    setCopiedSocial(key);
+
+    setTimeout(() => {
+      setCopiedSocial('');
     }, 2000);
   };
 
@@ -106,6 +116,40 @@ const About = () => {
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">erbhargavdas@gmail.com</p>
+              </div>
+              <div className="flex items-center justify-center gap-6 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    aria-label="Copy LinkedIn URL"
+                    className="flex items-center justify-center"
+                    onClick={() => handleSocialCopy('https://www.linkedin.com/in/bhrgvbhrgv/', 'linkedin')}>
+                    <img src={copiedSocial === 'linkedin' ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy linkedin" />
+                  </button>
+                  <a
+                    href="https://www.linkedin.com/in/bhrgvbhrgv/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                    linkedin
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    aria-label="Copy GitHub URL"
+                    className="flex items-center justify-center"
+                    onClick={() => handleSocialCopy('https://github.com/bhrgvbhrgv', 'github')}>
+                    <img src={copiedSocial === 'github' ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy github" />
+                  </button>
+                  <a
+                    href="https://github.com/bhrgvbhrgv"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                    github
+                  </a>
+                </div>
               </div>
             </div>
           </div>

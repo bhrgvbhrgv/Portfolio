@@ -168,6 +168,43 @@ export const myProjects = [
       },
     ],
   },
+  {
+    title: 'PurePrep – Watch Hygiene Happen Live',
+    desc: 'PrepPure is an innovative Software-as-a-Service platform focused on promoting hygiene and food safety through smart, technology-driven solutions. It provides real-time monitoring and streamlined workflows to ensure cleanliness, transparency, and trust in food preparation environments.',
+    subdesc:
+      'Built as a scalable SaaS application using Next.js 14, Tailwind CSS, JavaScript, Framer Motion, and Convex, PrepPure is designed for high performance, smooth user experience, and future-ready expansion.',
+    href: 'https://prep-pure.vercel.app/',
+    texture: '/textures/project/proj4_prepsync.mp4',
+    logo: '/assets/project1_purePrepLogo.jpeg',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'JavaScript',
+        path: '/assets/js2.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
+      },
+    ],
+  },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
