@@ -64,6 +64,9 @@ const About = () => {
                   if (globe) {
                     globe.controls().autoRotate = true;
                     globe.controls().autoRotateSpeed = 1;
+                    globe.controls().enableZoom = false;
+                    globe.controls().enablePan = false;
+                    globe.controls().enableRotate = false;
                   }
                 }}
                 height={326}

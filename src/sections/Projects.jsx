@@ -52,7 +52,7 @@ const Projects = () => {
             </div>
 
             <div className="flex items-center justify-between flex-wrap gap-5">
-              <p className="text-white-600 text-lg font-bold">Text place</p>
+              <p className="text-white-600 text-lg font-bold">{currentProject.cardText || 'Text place'}</p>
 
               <a
                 className="flex items-center gap-2 cursor-pointer text-white-600"

@@ -62,6 +62,7 @@ export const myProjects = [
     desc: 'PrepPure is an innovative Software-as-a-Service platform focused on promoting hygiene and food safety through smart, technology-driven solutions. It provides real-time monitoring and streamlined workflows to ensure cleanliness, transparency, and trust in food preparation environments.',
     subdesc:
       'Built as a scalable SaaS application using Next.js 14, Tailwind CSS, JavaScript, Framer Motion, and Convex, PrepPure is designed for high performance, smooth user experience, and future-ready expansion.',
+    cardText: 'Next.js 14, Tailwind CSS, JavaScript, MongoDB, and OpenAI/TensorFlow (for future CV integration).',
     href: 'https://prep-pure.vercel.app/',
     texture: '/textures/project/proj1_purePrep.mp4',
     logo: '/assets/project1_purePrepLogo.jpeg',
@@ -95,10 +96,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'LiveDoc - Real-Time AI Assisted Google Docs Alternative',
+    desc: 'LiveDoc is a high-performance collaborative platform that redefines real-time document editing. Engineered to support millions of simultaneous collaborators, it ensures every edit is captured with zero latency and absolute precision. By integrating OpenRouter, LiveDoc now features advanced AI capabilities, allowing users to instantly rewrite summaries, draft outlines, and query document features directly within the shared workspace.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together seamlessly in real time without any lag, leveraging Node.js and Liveblocks’ newest features for instant updates, presence tracking, and a highly responsive shared workspace.',
+      'Leveraging Node.js and Liveblocks’ 2026 suite, LiveDoc offers a next-generation experience with ultra-responsive presence tracking and instant state synchronization. The addition of an AI-powered toolbar via OpenRouter enables seamless transitions from brainstorming to final drafting.',
+    cardText: 'Next.js, Node.js, Liveblocks (v3.0+), OpenRouter API, Lexical/Tiptap, and MongoDB.',
     href: 'https://live-documentation-seven.vercel.app',
     texture: '/textures/project/proj2_liveDoc.mp4',
     logo: '/assets/project-logo2.png',
@@ -136,6 +138,7 @@ export const myProjects = [
     desc: 'Developed using modern frameworks and best practices, the project demonstrates component-based architecture, API integration, and performance-optimized frontend development.',
     subdesc:
       'A full-featured YouTube clone designed to replicate core video streaming functionalities with a clean, responsive UI',
+    cardText: 'React, Tailwind CSS, Redux Toolkit, Node.js, Express, MongoDB, and the YouTube Data.',
     href: 'https://next13-youtube-clone.vercel.app/',
     texture: '/textures/project/proj3_youtube.mp4',
     logo: '/assets/youTube.webp',
@@ -169,13 +172,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'PurePrep – Watch Hygiene Happen Live',
-    desc: 'PrepPure is an innovative Software-as-a-Service platform focused on promoting hygiene and food safety through smart, technology-driven solutions. It provides real-time monitoring and streamlined workflows to ensure cleanliness, transparency, and trust in food preparation environments.',
-    subdesc:
-      'Built as a scalable SaaS application using Next.js 14, Tailwind CSS, JavaScript, Framer Motion, and Convex, PrepPure is designed for high performance, smooth user experience, and future-ready expansion.',
-    href: 'https://prep-pure.vercel.app/',
+    title: 'PrepSync: AI-Driven Competitive Preparation',
+    desc: 'PrepSync is a collaborative web application that transforms solo study into a synchronized, competitive experience for exams like GATE and SSC. By utilizing real-time protocols, students can join "Exam Rooms" to solve questions together, effectively simulating high-stakes testing pressure in a shared digital environment.',
+    subdesc:'Beyond simple quizzes, the platform provides immediate, data-driven reports to identify and review weak points instantly. This combination of real-time interaction and detailed performance analytics allows users to track their progress and refine their exam strategies through collective competition.',
+    cardText: 'React, Tailwind CSS, Node.js, Express, Socket.io, PostgreSQL, Redis, and Chart.js.',
+    href: 'https://akprepsync.vercel.app/',
     texture: '/textures/project/proj4_prepsync.mp4',
-    logo: '/assets/project1_purePrepLogo.jpeg',
+    logo: '/assets/proj4_prepsyncLogo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
